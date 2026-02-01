@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8691834933979152481}
   - component: {fileID: 296609913196500471}
   - component: {fileID: 8481277396336157667}
+  - component: {fileID: 274330186361733257}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -151,6 +152,21 @@ MonoBehaviour:
   m_input: {fileID: 11400000, guid: e9d915f6dd0f648d38b554fd19363a70, type: 2}
   m_bodyTransform: {fileID: 2193368770721764603}
   m_rb: {fileID: 6241996015516175543}
+--- !u!114 &274330186361733257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203978823968069106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d9c7d1fcd78435aa68e9bde253886e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tank.Core.Player.PlayerAiming
+  ShowTopMostFoldoutHeaderGroup: 1
+  m_input: {fileID: 11400000, guid: e9d915f6dd0f648d38b554fd19363a70, type: 2}
+  m_turretTransform: {fileID: 5372005367933183625}
 --- !u!1 &227257668362224342
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +245,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 113134415
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 200
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: a94bf141bd2044c4399e321445c83112, type: 3}
@@ -323,7 +339,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 113134415
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 1a838243856331f4681c559527ad5846, type: 3}
@@ -506,7 +522,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 113134415
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 100
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 8769e4453ce5bc3429cfba7d58fbef13, type: 3}
