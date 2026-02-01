@@ -9,15 +9,18 @@ namespace Tank.Utils.Input
     public class InputReader : ScriptableObject, IPlayerActions
     {
         /// <summary>
-        /// Event
+        /// The move event, invoke the move event, returns a Vector2 direction.
         /// </summary>
         public event Action<Vector2> MoveEvent;
         /// <summary>
-        /// Event
+        /// Fire Event, invoke the event, returns true or false (a bool)
         /// </summary>
         public event Action<bool> PrimaryFireEvent;
-
         /// <summary>
+        /// Aiming position, move with the cursor.
+        /// </summary>
+        public Vector2 AimPosition;
+        
         /// input actions refs
         /// </summary>
         private Controls m_controls;
@@ -35,6 +38,7 @@ namespace Tank.Utils.Input
 
         public void OnAim(InputAction.CallbackContext context)
         {
+            AimPosition = context.ReadValue<Vector2>();
         }
 
         public void OnMove(InputAction.CallbackContext context)
