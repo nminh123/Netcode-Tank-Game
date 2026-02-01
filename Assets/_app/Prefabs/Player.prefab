@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 355511531778152305}
+  - component: {fileID: 6241996015516175543}
   - component: {fileID: 8691834933979152481}
   - component: {fileID: 296609913196500471}
+  - component: {fileID: 8481277396336157667}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -35,6 +37,33 @@ Transform:
   - {fileID: 5372005367933183625}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &6241996015516175543
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203978823968069106}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &8691834933979152481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 3461120934
+  GlobalObjectIdHash: 209981385
   InScenePlacedSourceGlobalObjectIdHash: 209981385
   DeferredDespawnTick: 0
   Ownership: 1
@@ -106,6 +135,22 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &8481277396336157667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203978823968069106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8cf38ba05df64662a5bc44e3f61d575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tank.Core.Player.PlayerMovement
+  ShowTopMostFoldoutHeaderGroup: 1
+  m_input: {fileID: 11400000, guid: e9d915f6dd0f648d38b554fd19363a70, type: 2}
+  m_bodyTransform: {fileID: 2193368770721764603}
+  m_rb: {fileID: 6241996015516175543}
 --- !u!1 &227257668362224342
 GameObject:
   m_ObjectHideFlags: 0
