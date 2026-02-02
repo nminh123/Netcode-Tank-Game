@@ -19,6 +19,9 @@ namespace Tank.Utils
         public struct Projectile
         {
             public static float TimeToLive { get; } = 1f;
+            public static float ProjectileSpeed { get; } = 30f;
+            public static float FireRate { get; } = 0.75f;
+            public static float MuzzleFlashDuration { get; } = 0.075f;
         }
     }
 }
