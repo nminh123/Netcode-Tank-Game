@@ -1,3 +1,4 @@
+using Tank.Core.Combat;
 using Tank.Utils.Input;
 using Unity.Netcode;
 using UnityEngine;
@@ -90,6 +91,10 @@ namespace Tank.Core.Player
 
             projectile_instance.transform.up = direction;
             Physics2D.IgnoreCollision(m_playerCollider, projectile_instance.GetComponent<Collider2D>());
+            if(projectile_instance.TryGetComponent<DealDamageOnContact>(out DealDamageOnContact d))
+            {
+                d.SetOwner(this.OwnerClientId);
+            }
             SpawnDummyProjectileClientRpc(spawn_pos, direction);
         }
 

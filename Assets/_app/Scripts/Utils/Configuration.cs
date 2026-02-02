@@ -12,6 +12,7 @@ namespace Tank.Utils
             public static float PLAYER_MOVEMENT_SPEED { get; } = 4f;
             public static float TURNING_RATE { get; } = 270f;
             public static int MAX_HEALTH { get; } = 100;
+            public static int DAMAGE { get; } = 5;
         }
 
         /// <summary>
