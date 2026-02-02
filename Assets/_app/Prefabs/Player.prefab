@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8481277396336157667}
   - component: {fileID: 274330186361733257}
   - component: {fileID: 3253181101537338511}
+  - component: {fileID: 8826797774876073843}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -78,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 1111052319
+  GlobalObjectIdHash: 209981385
   InScenePlacedSourceGlobalObjectIdHash: 209981385
   DeferredDespawnTick: 0
   Ownership: 1
@@ -187,6 +188,21 @@ MonoBehaviour:
   m_clientProjectilePrefab: {fileID: 652284198285914932, guid: f0a520b9531ec4f82b2160840b413289, type: 3}
   m_muzzleFlash: {fileID: 3163946495413350900}
   m_playerCollider: {fileID: 717627481277791283}
+--- !u!114 &8826797774876073843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203978823968069106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a57a8adf5e1d4dcba671f6f3622f09b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tank.Core.Combat.Health
+  ShowTopMostFoldoutHeaderGroup: 1
+  CurrentHealth:
+    m_InternalValue: 0
 --- !u!1 &227257668362224342
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,8 +20,8 @@ namespace Tank.Core.Player
 
         void Awake()
         {
-            m_movementSpeed = PlayerMovementSpeed;
-            m_turningRate = TurningRate;    
+            m_movementSpeed = PLAYER_MOVEMENT_SPEED;
+            m_turningRate = TURNING_RATE;    
         }
 
         public override void OnNetworkSpawn()

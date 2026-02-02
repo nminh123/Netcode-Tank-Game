@@ -9,8 +9,9 @@ namespace Tank.Utils
         /// </summary>
         public struct Player
         {
-            public static float PlayerMovementSpeed { get; } = 4f;
-            public static float TurningRate { get; } = 270f;
+            public static float PLAYER_MOVEMENT_SPEED { get; } = 4f;
+            public static float TURNING_RATE { get; } = 270f;
+            public static int MAX_HEALTH { get; } = 100;
         }
 
         /// <summary>
@@ -18,10 +19,10 @@ namespace Tank.Utils
         /// </summary>
         public struct Projectile
         {
-            public static float TimeToLive { get; } = 1f;
-            public static float ProjectileSpeed { get; } = 30f;
-            public static float FireRate { get; } = 0.75f;
-            public static float MuzzleFlashDuration { get; } = 0.075f;
+            public static float TIME_TO_LIVE { get; } = 1f;
+            public static float PROJECTILE_SPEED { get; } = 30f;
+            public static float FIRE_RATE { get; } = 0.75f;
+            public static float MUZZLE_FLASH_DURATION { get; } = 0.075f;
         }
     }
 }

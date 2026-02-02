@@ -8,7 +8,7 @@ namespace Tank.Utils
     {
         private void Start()
         {
-            Destroy(this.gameObject, TimeToLive);
+            Destroy(this.gameObject, TIME_TO_LIVE);
         }
     }
 }

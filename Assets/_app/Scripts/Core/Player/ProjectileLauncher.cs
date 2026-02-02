@@ -26,9 +26,9 @@ namespace Tank.Core.Player
 
         private void Awake()
         {
-            m_projectileSpeed = ProjectileSpeed;
-            m_fireRate = FireRate;
-            m_muzzleFlashDuration = MuzzleFlashDuration;
+            m_projectileSpeed = PROJECTILE_SPEED;
+            m_fireRate = FIRE_RATE;
+            m_muzzleFlashDuration = MUZZLE_FLASH_DURATION;
         }
 
         public override void OnNetworkSpawn()
