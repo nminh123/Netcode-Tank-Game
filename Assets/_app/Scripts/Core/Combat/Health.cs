@@ -9,7 +9,16 @@ namespace Tank.Core.Combat
     public class Health : NetworkBehaviour
     {
         public Action<Health> OnDie;
+        
         private int m_maxHealth = MAX_HEALTH;
+        public int MaxHealth
+        {
+            get
+            {
+                return m_maxHealth;
+            }
+        }
+
         public NetworkVariable<int> CurrentHealth = new NetworkVariable<int>();
 
         private bool m_isDead;
