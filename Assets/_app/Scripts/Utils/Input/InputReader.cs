@@ -53,5 +53,10 @@ namespace Tank.Utils.Input
             else if (context.canceled)
                 PrimaryFireEvent?.Invoke(false);
         }
+
+        private void OnDisable()
+        {
+            m_controls.Player.Disable();
+        }
     }
 }
